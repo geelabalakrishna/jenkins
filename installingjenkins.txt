@@ -25,3 +25,11 @@ docker run -d -u root --restart on-failure -p "8080:8080" -p "50000:50000" -v $P
 
 
 https://www.coachdevops.com/2020/05/docker-jenkins-integration-building.html#google_vignette
+
+
+
+M2_HOME=/home/ubuntu/maven-3.9.6
+M2=/home/ubuntu/maven-3.9.6/bin
+PATH=$PATH:$HOME/bin:$M2_HOME:$M2
+
+export PATH
