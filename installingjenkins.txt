@@ -21,3 +21,7 @@ https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
 sudo usermod docker jenkins
 sudo chmod 777 /var/run/docker.sock
 sudo chown ${USER}:docker /var/run/docker.sock
+docker run -d -u root --restart on-failure -p "8080:8080" -p "50000:50000" -v $PWD/jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
+
+
+https://www.coachdevops.com/2020/05/docker-jenkins-integration-building.html#google_vignette
