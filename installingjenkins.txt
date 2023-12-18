@@ -17,3 +17,7 @@ sudo systemctl status jenkins
 ------------------Official Page-------------------
 
 https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
+
+sudo usermod docker jenkins
+sudo chmod 777 /var/run/docker.sock
+sudo chown ${USER}:docker /var/run/docker.sock
